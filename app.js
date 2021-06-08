@@ -3,7 +3,11 @@ import cors from 'cors';
 import morgan from 'morgan';
 import helmet from 'helmet';
 import 'express-async-errors';
+import dotevn from 'dotenv';
 //import tweetsRoute from './router/tweets.js'
+
+dotevn.config();
+//console.log(process.env)
 
 // 앱 생성
 const app = express();
